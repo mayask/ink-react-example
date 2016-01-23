@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-  entry: ["./js/app.jsx"],
+  entry: ["./js/app.jsx", "./css/main.scss"],
   output: {
     path: "public/js",
     publicPath: "/js",
@@ -12,15 +12,12 @@ module.exports = {
       {
         test: /\.jsx?|\.js$/,
         exclude: /(node_modules)/,
-        loader: "babel",
-        // query: {
-        //   optional: ["es7.classProperties"]
-        // }
+        loader: "babel"
       },
-      // {
-      //   test: /\.scss$/,
-      //   loader: "style!css!sass"
-      // }
+      {
+        test: /\.scss$/,
+        loader: "style!css!sass"
+      }
     ]
   },
   resolveLoader: {
