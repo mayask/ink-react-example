@@ -1,0 +1,33 @@
+{
+  "name": "ink-react-examples",
+  "version": "1.0.0",
+  "description": "Sample email templates created with ink-react",
+  "main": "js/app.js",
+  "dependencies": {
+    "ink-react": "^0.0.1",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "test": "no",
+    "build": "webpack -p",
+    "watch": "webpack-dev-server --content-base public/"
+  },
+  "keywords": [
+    "ink",
+    "react",
+    "zurb",
+    "email",
+    "example"
+  ],
+  "author": "Maxim Yaskevich",
+  "license": "ISC"
+}
