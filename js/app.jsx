@@ -28,8 +28,13 @@ ReactDOM.render((
         <Col center width="six">
           <Image src="http://placehold.it/125x125&text=Centered%20Image"/>
         </Col>
-        <Col center width="six">
-          <Button className="hello" href="#">Hello</Button>
+        <Col width="six">
+          <Col width="three">
+            <Button className="hello" href="#">Hello</Button>
+          </Col>
+          <Col width="three">
+            <Button className="hello" href="#">World</Button>
+          </Col>
         </Col>
       </Row>
     </Container>
